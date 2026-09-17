@@ -1,0 +1,28 @@
+class Transaction:
+    def __init__(self, id, description, category, amount, type):
+        self.id = id
+        self.description = description
+        self.category = category
+        self.amount = amount
+        self.type = type  # "income" or "expense"
+
+    def get_id(self):
+        return self.id
+
+    def get_description(self):
+        return self.description
+
+    def get_category(self):
+        return self.category
+
+    def get_amount(self):
+        return self.amount
+
+    def get_type(self):
+        return self.type
+
+    def set_description(self, new_description):
+        self.description = new_description
+
+    def set_amount(self, new_amount):
+        self.amount = new_amount
